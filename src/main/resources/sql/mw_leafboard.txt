@@ -1,0 +1,10 @@
+CREATE TABLE mw_leafboard(
+    b_no NUMBER(4) CONSTRAINT pk_key PRIMARY KEY,
+    b_name VARCHAR2(20) NOT NULL,
+    b_title VARCHAR2(100) NOT NULL,
+    b_content VARCHAR2(500),
+    b_uphit  NUMBER(4) DEFAULT 0,
+    b_calendar DATE DEFAULT sysdate
+);
+
+CREATE SEQUENCE b_no START WITH 1 INCREMENT BY 1;

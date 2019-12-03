@@ -1,0 +1,13 @@
+CREATE TABLE sboard(
+    sno NUMBER(20) PRIMARY KEY,
+    sname VARCHAR2(20) NOT NULL,
+    stitle VARCHAR2(100) NOT NULL,
+    scontent VARCHAR2(2000),
+    suphit NUMBER(10) DEFAULT 0,
+    sdate DATE DEFAULT sysdate, 
+    sgroup NUMBER(4),
+    sstep NUMBER(4),
+    sindent NUMBER(4)
+);
+
+CREATE SEQUENCE sno_seq;

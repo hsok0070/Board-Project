@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" th:href="@{/header_new.css}" href="./header_new.css" />
+
+</head>
+<body>
+
+<nav th:fragment="side-bar" class="bg-light" id="side-bar">
+
+	<div class="side-bar-heading bg-light">
+		LOGO
+	</div>
+
+	<div class="side-bar-links">
+	
+		<a href="/greet/glist" class="nav-links nav-links-action  bg-light " > 방명록 </a>
+		<a href="/iboard/getBoardList" class="nav-links nav-links-action bg-light"> 이미지 게시판 </a>
+		<a href="/ansboard/boardList" class="nav-links nav-links-action bg-light"> 상담 게시판 </a>
+		<a href="/mw/boardlist" class="nav-links nav-links-action bg-light"> 자유 게시판 </a>
+	
+	</div>
+
+
+		
+	</nav>
+</body>
+</html>

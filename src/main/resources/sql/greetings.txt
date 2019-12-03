@@ -1,0 +1,8 @@
+CREATE TABLE greetings(
+    gno NUMBER(20) CONSTRAINT pk_gno PRIMARY KEY,
+    gname VARCHAR2(20) NOT NULL,
+    greet VARCHAR2(100) NOT NULL,
+    gdate DATE DEFAULT SYSDATE
+);
+
+CREATE SEQUENCE gno_seq;
